@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(193, 62, 62);
+  background: linear-gradient(
+    139deg,
+    rgb(33, 45, 214) 0%,
+    rgb(185, 81, 206) 100%
+  );
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+.heading {
+  color: white;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.addItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.material-icons {
+  font-size: 40px;
+  margin-left: 5px;
+  color: green;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+.listiconedit {
+  font-size: 25px;
+  margin-left: 10px;
+  color: rgb(104, 202, 226);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+}
+.listicondelete {
+  font-size: 25px;
+  margin-left: 10px;
+  color: red;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  #todos {
+    width: 100%;
+  }
+}
+.task-item {
+  position: relative;
+  margin: auto;
+  width: 54%;
+  margin-top: 40px;
+  background-color: white;
+  color: black;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.todo_input {
+  width: 100%;
+  height: 40px;
+  padding: 0 0 0 10px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+}
+.task-actions {
+  padding: 4px;
+  float: right;
+}
